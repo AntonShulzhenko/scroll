@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="css/perfect-scrollbar.min.css">
+
+  <style>
+    .block {
+      width: 500px;
+      height: 400px;
+      margin: 50px auto;
+      background-color: #eee;
+      overflow: hidden;
+    }
+
+    #scroll {
+      position: relative;
+      height: 100%;
+    }
+
+    .ps>.ps__scrollbar-y-rail {
+      width: 40px;
+      opacity: 0.65;
+    }
+    .ps.ps--active-x>.ps__scrollbar-x-rail, .ps.ps--active-y>.ps__scrollbar-y-rail {
+      background-color: #171a1e;
+    }
+
+    .ps>.ps__scrollbar-y-rail>.ps__scrollbar-y {
+      width: 8px;
+      border-radius: 4px;
+      background-color: #3b3d41;
+      right: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="block">
+    <div id="scroll">
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consectetur consequuntur deserunt
+        distinctio error eum ipsum maiores molestias quos unde! Ad autem culpa est id in odit omnis praesentium
+        voluptate!
+      </div>
+      <div>Culpa dolorem eum facilis hic in labore neque, similique. Ab amet assumenda debitis delectus eaque eligendi
+        fugit nam nisi nulla odio officia possimus quae, quidem quod, sed similique ullam vero.
+      </div>
+      <div>A aperiam autem culpa inventore officiis. Amet culpa, cumque dolorem et facilis fuga fugiat ipsa iste laborum
+        nemo nesciunt quos rerum temporibus! Commodi consequuntur enim mollitia provident qui soluta tempore.
+      </div>
+      <div>Ab alias amet aperiam at beatae consectetur culpa debitis distinctio dolores, doloribus error excepturi
+        exercitationem iste magni minus modi nam, natus nihil nostrum omnis praesentium quis reiciendis repudiandae
+        tempore veniam.
+      </div>
+      <div>Aliquam asperiores facere in totam. Ab, delectus dolor dolores earum esse in laudantium minima, molestiae
+        praesentium quaerat reprehenderit tempore tenetur veniam, veritatis vitae. Aliquam at quae, quasi repellendus
+        repudiandae totam?
+      </div>
+      <div>Autem dignissimos inventore iste necessitatibus officia, quidem repellat voluptatum. Accusamus at commodi
+        debitis id incidunt iste minima nisi odit optio placeat possimus quidem, recusandae rem repellat sed sequi sunt
+        ut?
+      </div>
+      <div>Adipisci autem cum, cumque dicta error et laudantium. A ab, aperiam blanditiis consequuntur deleniti eveniet,
+        excepturi harum id itaque iusto labore odit quasi quibusdam quod ratione repellendus saepe tempore velit.
+      </div>
+      <div>Blanditiis consectetur dolores doloribus earum esse ipsum neque ratione sunt tempora! Ab eum excepturi nemo.
+        Alias animi blanditiis, dolorum hic ipsum iusto labore officiis pariatur qui, quia, sapiente vero. Voluptatem.
+      </div>
+      <div>Architecto beatae, dolore dolorem eaque eveniet hic illum in nesciunt obcaecati perspiciatis provident, quo
+        rem repudiandae tempora tenetur vel voluptas. Accusantium, aut cupiditate earum esse exercitationem recusandae
+        rerum soluta voluptatem!
+      </div>
+      <div>Aut doloremque impedit magnam non sit? Alias architecto beatae enim error eveniet excepturi expedita
+        explicabo id impedit maiores natus nulla, numquam odit pariatur quasi, qui quisquam quo repudiandae rerum
+        temporibus.
+      </div>
+    </div>
+  </div>
+
+  <script src="js/perfect-scrollbar.min.js"></script>
+
+  <script>
+    var scroll = document.getElementById('scroll');
+
+    Ps.initialize(scroll, {
+      wheelSpeed: 2,
+      wheelPropagation: true,
+      minScrollbarLength: 20
+    });
+  </script>
+</body>
+</html>
